@@ -1,0 +1,45 @@
+name: functions
+on: push
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+  - name: add_numbers
+    description: Add two numbers
+    parameters:
+      - name: num1
+        type: int
+        description: The first number
+      - name: num2
+        type: int
+        description: The second number
+
+  - name: subtract_numbers
+    description: Subtract two numbers
+    parameters:
+      - name: num1
+        type: int
+        description: The first number
+      - name: num2
+        type: int
+        description: The second number
+
+  - name: multiply_numbers
+    description: Multiply two numbers
+    parameters:
+      - name: num1
+        type: int
+        description: The first number
+      - name: num2
+        type: int
+        description: The second number
+
+  - name: divide_numbers
+    description: Divide two numbers
+    parameters:
+      - name: num1
+        type: int
+        description: The first number
+      - name: num2
+        type: int
+        description: The second number
