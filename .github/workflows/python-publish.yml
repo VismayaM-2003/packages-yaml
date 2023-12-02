@@ -25,6 +25,6 @@ jobs:
             - name: Publish distribution to PyPI
               uses: pypa/gh-action-pypi-publish@release/v1
               with:
-                user: vismaya_2003
-                password: ${{ secrets.test_secret }}
-                # repository_url: https://upload.pypi.org/legacy/
+                username: __token__
+                password: ${{ secrets.API_TOKEN }}
+                #repository_url: https://upload.pypi.org/legacy/
