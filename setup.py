@@ -9,7 +9,7 @@ classifiers =[
 ]    
 
 setup(
-    name='Basic-Calculator' ,
+    name='basic-calculator' ,
     version='0.0.2' ,
     description='A very basic calculator' ,
     long_description=open('README.txt').read() + '\n\n' + open('CHANGELOG.txt').read(),
