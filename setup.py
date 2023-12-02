@@ -9,8 +9,8 @@ classifiers =[
 ]    
 
 setup(
-    name='pypibasic' ,
-    version='0.0.1' ,
+    name='Basic-Calculator' ,
+    version='0.0.2' ,
     description='A very basic calculator' ,
     long_description=open('README.txt').read() + '\n\n' + open('CHANGELOG.txt').read(),
     url='' ,
