@@ -1,45 +1,30 @@
-name: functions
-on: push
+name: Publish Python distributions to PyPI and TestPyPI
+
+on:
+  workflow_dispatch:
+
 jobs:
-  my-job:
-    runs-on: ubuntu-latest
-    steps:
-  - name: add_numbers
-    description: Add two numbers
-    parameters:
-      - name: num1
-        type: int
-        description: The first number
-      - name: num2
-        type: int
-        description: The second number
+    python-build-n-publish:
+        name: Build and publish Python distribution
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
 
-  - name: subtract_numbers
-    description: Subtract two numbers
-    parameters:
-      - name: num1
-        type: int
-        description: The first number
-      - name: num2
-        type: int
-        description: The second number
+            - name: Initialize Python 3.9
+              uses: actions/setup-python@v4
+              with:
+                python-version: "3.x"
 
-  - name: multiply_numbers
-    description: Multiply two numbers
-    parameters:
-      - name: num1
-        type: int
-        description: The first number
-      - name: num2
-        type: int
-        description: The second number
+            - name: Install dependencies
+              run: |
+                python -m pip install --upgrade pip
+          
+            - name: Build binary wheel and a source tarball
+              run: python setup.py sdist
 
-  - name: divide_numbers
-    description: Divide two numbers
-    parameters:
-      - name: num1
-        type: int
-        description: The first number
-      - name: num2
-        type: int
-        description: The second number
+            - name: Publish distribution to PyPI
+              uses: pypa/gh-action-pypi-publish@release/v1
+              with:
+                user: vismaya_2003
+                password: ${{ secrets.test_secret }}
+                # repository_url: https://upload.pypi.org/legacy/
