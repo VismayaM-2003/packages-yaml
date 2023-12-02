@@ -1,4 +1,4 @@
-import setuptools
+#typeignore
 from setuptools import setup, find_packages
 
 classifiers =[
