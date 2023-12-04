@@ -9,8 +9,8 @@ classifiers =[
 ]    
 
 setup(
-    name='testprojcalculator' ,
-    version='0.0.2' ,
+    name='simplecalculator' ,
+    version='0.0.1' ,
     description='A very basic calculator' ,
     long_description=open('README.txt').read() + '\n\n' + open('CHANGELOG.txt').read(),
     url='' ,
