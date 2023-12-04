@@ -64,7 +64,7 @@ Uses the pypa/gh-action-pypi-publish GitHub Action to publish the distribution t
 
 ## SETUP
 
-You have to create a API TOKEN in the pypi account and copy that token then go to the Github repository, then click onto the Secrets and Variables under that click the Actions, In Actions you can find the New repository secret click into that, name a secret and paste the token into the Value section.
+You have to create a API TOKEN in the pypi account and copy that token then go to the Github repository, go to the settings, then click onto the Secrets and Variables under that click the Actions, In Actions you can find the New repository secret click into that, name a secret and paste the token into the Value section.
 
 ## LICENSE
 
