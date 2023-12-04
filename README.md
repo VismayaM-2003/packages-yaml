@@ -35,7 +35,7 @@ Defines a job named "python-build-n-publish" that runs on the latest version of 
           python-version: "3.11.5"
 
 ```
-This step initializes Python 3.9 using the actions/setup-python action with version 4. 
+This step initializes Python 3.11.5 using the actions/setup-python action with version 4. 
 
 ```yaml
       - name: Install dependencies
