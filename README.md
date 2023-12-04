@@ -4,7 +4,7 @@
 
 We are going to create, Build and Publish Packages into PyPI using Github Actions. Here, we are creating a very simple calculator that takes two numbers and either add, subtract, multiply or divide them. This is the PACKAGE [here](https://github.com/VismayaM-2003/packages-yaml/blob/main/pypibasic/arithmetic.py). 
 
-## WORKFLOW OVERVIEW
+## Workflow Overview
 
 The provided code is a GitHub Actions [Workflow](https://github.com/VismayaM-2003/packages-yaml/blob/main/.github/workflows/python-publish.yml) defined in YAML format.
 
@@ -62,10 +62,10 @@ Runs the python setup.py sdist command to build a binary wheel and a source tarb
 ```
 Uses the pypa/gh-action-pypi-publish GitHub Action to publish the distribution to PyPI. The action requires a username and password. In this case, the username is __token__, and the password is retrieved from GitHub Secrets (secrets.API_TOKEN). The repository_url points to the PyPI repository.
 
-## SETUP
+## Setup
 
 You have to create a API TOKEN in the pypi account and copy that token then go to the Github repository, go to the settings, then click onto the Secrets and Variables under that click the Actions, In Actions you can find the New repository secret click into that, name a secret and paste the token into the Value section.
 
-## LICENSE
+## License
 
 The License text is [here](https://github.com/VismayaM-2003/packages-yaml/blob/main/LICENSE.txt)
