@@ -27,4 +27,4 @@ jobs:
               with:
                 username: __token__
                 password: ${{ secrets.API_TOKEN }}
-                #repository_url: https://upload.pypi.org/legacy/
+                repository_url: https://upload.pypi.org/legacy/
