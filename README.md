@@ -10,7 +10,7 @@
    * [Workflow file](https://github.com/VismayaM-2003/packages-yaml/blob/main/.github/workflows/python-publish.yml)
    * The provided code is a GitHub Actions workflow defined in YAML format.
      
-'''yaml
+'''python
 name: Publish Python distributions to PyPI and TestPyPI
 
 on:
