@@ -60,7 +60,7 @@ Runs the python setup.py sdist command to build a binary wheel and a source tarb
           repository_url: https://upload.pypi.org/legacy/
 
 ```
-Uses the pypa/gh-action-pypi-publish GitHub Action to publish the distribution to PyPI. The action requires a username and password. In this case, the username is __token__, and the password is retrieved from GitHub Secrets (secrets.API_TOKEN). The repository_url is commented out, but it typically points to the PyPI repository.
+Uses the pypa/gh-action-pypi-publish GitHub Action to publish the distribution to PyPI. The action requires a username and password. In this case, the username is __token__, and the password is retrieved from GitHub Secrets (secrets.API_TOKEN). The repository_url points to the PyPI repository.
 
 ## SETUP
 
