@@ -16,7 +16,9 @@ name: Publish Python distributions to PyPI and TestPyPI
 on: [push]
 
 ```
-This specifies the name of the workflow as "Publish Python distributions to PyPI and TestPyPI." The on section indicates that this workflow is triggered by a manual event (workflow_dispatch). This means you can run this workflow manually from the GitHub Actions UI.
+- name Keyword: This keyword is used to specify a name for the workflow. In this case, the workflow is named "Publish Python distributions to PyPI and TestPyPI."
+
+- on Keyword with push Event: This section specifies the events that trigger the workflow. In this case, the workflow is triggered when a push event occurs. A push event typically happens when changes are pushed to the repository, such as new commits or branches.
 
 ```yaml
 jobs:
