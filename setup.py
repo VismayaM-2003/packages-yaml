@@ -10,7 +10,7 @@ classifiers =[
 
 setup(
     name='testsimpleproject' ,
-    version='0.0.2' ,
+    version='0.0.1' ,
     description='A very basic calculator' ,
     long_description=open('README.txt').read() + '\n\n' + open('CHANGELOG.txt').read(),
     url='' ,
