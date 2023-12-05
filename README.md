@@ -13,8 +13,7 @@ The provided code is a GitHub Actions [Workflow](https://github.com/VismayaM-200
 ```yaml
 name: Publish Python distributions to PyPI and TestPyPI
 
-on:
-  workflow_dispatch:
+on: [push]
 
 ```
 This specifies the name of the workflow as "Publish Python distributions to PyPI and TestPyPI." The on section indicates that this workflow is triggered by a manual event (workflow_dispatch). This means you can run this workflow manually from the GitHub Actions UI.
