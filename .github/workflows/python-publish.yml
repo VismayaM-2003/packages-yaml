@@ -1,7 +1,6 @@
 name: Publish Python distributions to PyPI and TestPyPI
 
-on:
-  workflow_dispatch:
+on: [push]
 
 jobs:
     python-build-n-publish:
@@ -18,9 +17,6 @@ jobs:
             - name: Install dependencies
               run: |
                 python -m pip install --upgrade pip
-          
-            - name: Build binary wheel and a source tarball
-              run: python setup.py sdist
 
             - name: Publish distribution to PyPI
               uses: pypa/gh-action-pypi-publish@release/v1
