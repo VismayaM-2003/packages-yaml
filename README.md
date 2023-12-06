@@ -20,6 +20,7 @@ on: [push]
 
 - on Keyword with push Event: This section specifies the events that trigger the workflow. In this case, the workflow is triggered when a push event occurs. A push event typically happens when changes are pushed to the repository, such as new commits or branches.
 
+
 ```yaml
 jobs:
   python-build-n-publish:
